@@ -1,10 +1,14 @@
 # AWS Secrets Bundle
 
+[![GitHub license](https://img.shields.io/github/license/constup/aws-secrets-bundle?style=flat-square&color=green)](https://github.com/constup/aws-secrets-bundle/blob/master/LICENSE)
+![PHP version](https://img.shields.io/badge/PHP-%5E7.4-blueviolet?style=flat-square)
+![Symfony](https://img.shields.io/badge/Symfony-%5E5.3-blueviolet?style=flat-square)
+
 Use AWS Secrets as service container parameters in Symfony.
 
 ## Installation
 
-    $ composer require constup/aws-secrets-bundle:"dev-master"
+    $ composer require constup/aws-secrets-bundle
 
 ## Configuration
 
