@@ -6,6 +6,6 @@ namespace Constup\AwsSecretsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class AwsSecretsBundle extends Bundle
+class ConstupAwsSecretsBundle extends Bundle
 {
 }
