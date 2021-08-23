@@ -6,6 +6,14 @@
 
 Use AWS Secrets as service container parameters in Symfony.
 
+## History and honorable mentions
+
+This bundle is loosely based and inspired by `incompass/aws-secrets-bundle` (https://github.com/casechek/aws-secrets-bundle). 
+The Incompass bundle is compatible with Symfony 3 and 4, and it looks like it's not updated/maintained anymore. This 
+package is built to be compatible with Symfony 5 and will, over time, get improvements.
+
+If you are still using Symfony 3 or 4, please use the Incompass bundle instead of this one.
+
 ## Installation
 
     $ composer require constup/aws-secrets-bundle
