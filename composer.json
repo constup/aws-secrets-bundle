@@ -7,23 +7,23 @@
     "require": {
         "php": ">=7.4",
         "symfony/dependency-injection": "^5.3",
-        "aws/aws-sdk-php": "^3.191",
         "ext-json": "*"
     },
     "require-dev": {
         "symfony/framework-bundle": "^5.3",
         "phpunit/phpunit": "^9.5",
         "symfony/phpunit-bridge": "^5.3 | ^4.0",
-        "phpspec/prophecy-phpunit": "^2.0"
+        "phpspec/prophecy-phpunit": "^2.0",
+        "aws/aws-sdk-php": "^3.191"
     },
     "autoload": {
         "psr-4": {
-            "AwsSecretsBundle\\": "src/"
+            "Constup\\AwsSecretsBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\AwsSecretsBundle\\": "tests/"
+            "Constup\\AwsSecretsBundle\\Tests\\": "tests/"
         }
     }
 }

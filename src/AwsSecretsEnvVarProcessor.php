@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace AwsSecretsBundle;
+namespace Constup\AwsSecretsBundle;
 
-use AwsSecretsBundle\Provider\AwsSecretsEnvVarProviderInterface;
+use Constup\AwsSecretsBundle\Provider\AwsSecretsEnvVarProviderInterface;
 use Closure;
 use Symfony\Component\DependencyInjection\EnvVarProcessorInterface;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;

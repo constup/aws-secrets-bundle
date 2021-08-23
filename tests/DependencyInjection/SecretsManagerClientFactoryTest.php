@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\AwsSecretsBundle\DependencyInjection;
+namespace Constup\AwsSecretsBundle\Tests\DependencyInjection;
 
 use Aws\SecretsManager\SecretsManagerClient;
-use AwsSecretsBundle\DependencyInjection\SecretsManagerClientFactory;
+use Constup\AwsSecretsBundle\DependencyInjection\SecretsManagerClientFactory;
 use PHPUnit\Framework\TestCase;
 
 class SecretsManagerClientFactoryTest extends TestCase

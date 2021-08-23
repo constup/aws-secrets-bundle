@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace AwsSecretsBundle\Provider;
+namespace Constup\AwsSecretsBundle\Provider;
 
 class AwsSecretsArrayEnvVarProvider implements AwsSecretsEnvVarProviderInterface
 {

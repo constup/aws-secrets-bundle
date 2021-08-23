@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace AwsSecretsBundle\DependencyInjection;
+namespace Constup\AwsSecretsBundle\DependencyInjection;
 
 use Aws\SecretsManager\SecretsManagerClient;
 use Exception;

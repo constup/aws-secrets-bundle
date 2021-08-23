@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace AwsSecretsBundle\Provider;
+namespace Constup\AwsSecretsBundle\Provider;
 
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Cache\InvalidArgumentException;

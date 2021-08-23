@@ -2,10 +2,10 @@
 
 declare(strict_types = 1);
 
-namespace Tests\AwsSecretsBundle;
+namespace Constup\AwsSecretsBundle\Tests;
 
-use AwsSecretsBundle\AwsSecretsEnvVarProcessor;
-use AwsSecretsBundle\Provider\AwsSecretsEnvVarProviderInterface;
+use Constup\AwsSecretsBundle\AwsSecretsEnvVarProcessor;
+use Constup\AwsSecretsBundle\Provider\AwsSecretsEnvVarProviderInterface;
 use PHPUnit\Framework\TestCase;
 use Prophecy\PhpUnit\ProphecyTrait;
 
