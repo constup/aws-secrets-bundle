@@ -1,12 +1,10 @@
 # AWS Secrets Bundle
 
-Easy loading of AWS Secrets Manager Secrets for Symfony
-
-[![Build Status](https://travis-ci.org/incompass/aws-secrets-bundle.svg?branch=master)](https://travis-ci.org/incompass/aws-secrets-bundle)
+Use AWS Secrets as service container parameters in Symfony.
 
 ## Installation
 
-    $ composer require incompass/aws-secrets-bundle:"dev-master"
+    $ composer require constup/aws-secrets-bundle:"dev-master"
 
 ## Configuration
 
@@ -29,7 +27,7 @@ Set an env var to an AWS Secret Manager Secret name like so:
 
     AWS_SECRET=secret_name
 
-If you want to grab a key in a JSON secret, you can seperate the secret name and key:
+If you want to grab a key in a JSON secret, you can separate the secret name and key:
 
     AWS_SECRET=secret_name,key
     
