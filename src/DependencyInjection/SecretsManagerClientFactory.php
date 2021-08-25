@@ -19,7 +19,7 @@ class SecretsManagerClientFactory
      *
      * @return SecretsManagerClient
      */
-    public function createClient(
+    public static function createClient(
         string $region,
         string $version,
         ?string $key,
