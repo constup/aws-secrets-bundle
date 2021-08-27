@@ -19,7 +19,7 @@ If you are still using Symfony 3 or 4, please use the Incompass bundle instead o
 ### Install AWS SDK
 
 Since the official recommendation from Symfony is: `A bundle must not embed third-party PHP libraries. 
-It should rely on the standard Symfony autoloading instead.`, the `aws/aws/sdk-php` Composer package is included in this 
+It should rely on the standard Symfony autoloading instead.`, the `aws/aws-sdk-php` Composer package is included in this 
 bundle only as a dev dependency (for testing purposes).
 
 You need to install AWS SDK for PHP in your project yourself:
@@ -79,3 +79,6 @@ Your secret will now be loaded at runtime!
 ## Examples
 
 * [Configure Doctrine to use AWS Secret values as MySQL connection parameters](./doc/sample_doctrine_mysql_connection.md)
+
+---
+[[Back to README](../README.md)]
