@@ -60,3 +60,6 @@ DATABASE_URL="mysql://%database_username%:%database_password%@127.0.0.1:3306/db_
 
 If you are using AWS RDS for database, also replace `127.0.0.1` with your RDS endpoint. _(Hint: you can also store this 
 value in your `server_config` secret and fetch it just like username and password.)_
+
+---
+[[Back to README](../README.md)]
