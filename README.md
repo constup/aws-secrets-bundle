@@ -14,23 +14,47 @@ package is built to be compatible with Symfony 5 and will, over time, get improv
 
 If you are still using Symfony 3 or 4, please use the Incompass bundle instead of this one.
 
+## Prerequisites
+
+### Install AWS SDK
+
+Since the official recommendation from Symfony is: `A bundle must not embed third-party PHP libraries. 
+It should rely on the standard Symfony autoloading instead.`, the `aws/aws/sdk-php` Composer package is included in this 
+bundle only as a dev dependency (for testing purposes).
+
+You need to install AWS SDK for PHP in your project yourself:
+
+```shell
+composer require aws/aws-sdk-php
+```
+
+### AWS credentials
+
+In order to connect to any AWS service (for example: AWS Secrets Manager), your application must be authenticated on 
+that AWS service. Since there are several scenarios for this, depending on your environment setup, configuring 
+environments and using credentials is covered here: [AWS credentials and authentication](./doc/aws_credentials.md)
+
 ## Installation
 
     $ composer require constup/aws-secrets-bundle
 
 ## Configuration
 
+By default, configuration for this bundle is loaded from `config/packages/aws_secrets.yaml` file or its 
+environment-specific alternatives (for example: `config/packages/test/aws_secrets.yaml`). The following configuration
+properties are available:
+
 ```yaml
 aws_secrets:
   client_config:
-    region:           # required if ignore is false
-    version: 'latest' # defaults to latest
+    region:           # Required if "ignore" is false.
+    version: 'latest' # Defaults to "latest".
     credentials: 
         key: ~
         secret: ~
-  cache: 'array'      # one of apcu, array, filesystem, default is array
-  delimiter: ','      # delimiter to separate key from secret name
-  ignore: false       # pass through aws (for local dev environments set to true)
+  cache: 'array'      # Can be one of the following: apcu, array, filesystem. Default is array.
+  delimiter: ','      # Delimiter to separate key from secret name.
+  ignore: false       # Pass through AWS (for local dev environments set to "true").
 ```
 
 ## Usage
@@ -51,3 +75,7 @@ parameters:
 ```
 
 Your secret will now be loaded at runtime!
+
+## Examples
+
+* [Configure Doctrine to use AWS Secret values as MySQL connection parameters](./doc/sample_doctrine_mysql_connection.md)
