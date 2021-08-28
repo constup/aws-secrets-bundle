@@ -10,7 +10,7 @@ class AwsSecretsEnvVarProvider implements AwsSecretsEnvVarProviderInterface
 {
     const AWS_SECRET_ID = 'SecretId';
     const AWS_SECRET_STRING = 'SecretString';
-    private $secretsManagerClient;
+    private SecretsManagerClient $secretsManagerClient;
 
     public function __construct(SecretsManagerClient $secretsManagerClient)
     {

@@ -7,7 +7,7 @@ namespace Constup\AwsSecretsBundle\Provider;
 class AwsSecretsArrayEnvVarProvider implements AwsSecretsEnvVarProviderInterface
 {
     private array $values = [];
-    private $decorated;
+    private AwsSecretsEnvVarProviderInterface $decorated;
 
     public function __construct(AwsSecretsEnvVarProviderInterface $decorated)
     {
