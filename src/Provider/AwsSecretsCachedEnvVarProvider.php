@@ -10,9 +10,9 @@ use Psr\Cache\InvalidArgumentException;
 class AwsSecretsCachedEnvVarProvider implements AwsSecretsEnvVarProviderInterface
 {
     const CACHE_KEY_PREFIX = 'aws_secret';
-    private $cacheItemPool;
-    private $decorated;
-    private $ttl;
+    private CacheItemPoolInterface $cacheItemPool;
+    private AwsSecretsEnvVarProviderInterface $decorated;
+    private int $ttl;
 
     public function __construct(CacheItemPoolInterface $cacheItemPool, AwsSecretsEnvVarProviderInterface $decorated, int $ttl = 60)
     {
