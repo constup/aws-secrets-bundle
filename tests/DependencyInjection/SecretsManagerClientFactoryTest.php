@@ -16,6 +16,7 @@ class SecretsManagerClientFactoryTest extends TestCase
         $factory->createClient(
             'region',
             'latest',
+            null,
             'key',
             null
         );
@@ -30,6 +31,7 @@ class SecretsManagerClientFactoryTest extends TestCase
             'region',
             'latest',
             null,
+            null,
             'secret'
         );
     }
@@ -41,6 +43,7 @@ class SecretsManagerClientFactoryTest extends TestCase
         $client = $factory->createClient(
             'region',
             'latest',
+            null,
             null,
             null
         );
@@ -54,8 +57,23 @@ class SecretsManagerClientFactoryTest extends TestCase
         $client = $factory->createClient(
             'region',
             'latest',
+            null,
             'key',
             'secret'
+        );
+        $this->assertInstanceOf(SecretsManagerClient::class, $client);
+    }
+
+    /** @test */
+    public function it_builds_client_with_endpoint(): void
+    {
+        $factory = new SecretsManagerClientFactory();
+        $client = $factory->createClient(
+            'region',
+            'latest',
+            'http://my-endpoint.example.com:4566',
+            null,
+            null
         );
         $this->assertInstanceOf(SecretsManagerClient::class, $client);
     }

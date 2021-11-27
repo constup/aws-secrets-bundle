@@ -49,6 +49,7 @@ aws_secrets:
   client_config:
     region:           # Required if "ignore" is false.
     version: 'latest' # Defaults to "latest".
+    endpoint: ~
     credentials: 
         key: ~
         secret: ~

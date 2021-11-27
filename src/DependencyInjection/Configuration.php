@@ -25,6 +25,7 @@ class Configuration implements ConfigurationInterface
                     ->children()
                         ->scalarNode('region')->defaultNull()->end()
                         ->scalarNode('version')->defaultValue('latest')->end()
+                        ->scalarNode('endpoint')->defaultNull()->end()
                         ->arrayNode('credentials')
                             ->addDefaultsIfNotSet()
                             ->children()
