@@ -41,6 +41,7 @@ class AwsSecretsExtension extends Extension
             ->setPublic(false)
             ->addArgument($configs['client_config']['region'])
             ->addArgument($configs['client_config']['version'])
+            ->addArgument($configs['client_config']['endpoint'])
             ->addArgument($configs['client_config']['credentials']['key'])
             ->addArgument($configs['client_config']['credentials']['secret'])
             ->setFactory([SecretsManagerClientFactory::class, 'createClient']);
