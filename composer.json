@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "AwsSecretsBundle\\": "src/"
+            "Constup\\AwsSecretsBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\AwsSecretsBundle\\": "tests/"
+            "Constup\\AwsSecretsBundle\\Tests\\": "tests/"
         }
     }
 }
