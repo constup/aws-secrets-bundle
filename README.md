@@ -36,7 +36,15 @@ environments and using credentials is covered here: [AWS credentials and authent
 
 ## Installation
 
-    $ composer require constup/aws-secrets-bundle
+There are two main versions of AWS Secrets bundle: 1.x and 2.x.
+
+Install version 1.x to use this package with Symfony 5.x and PHP 7.4.
+
+    $ composer require constup/aws-secrets-bundle:^1
+
+Install version 2.x to use this package with Symfony 6.x and PHP 8.x.
+
+    $ composer require constup/aws-secrets-bundle:^2
 
 ## Configuration
 
