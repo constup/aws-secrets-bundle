@@ -37,7 +37,7 @@ class AwsSecretsEnvVarProcessor implements EnvVarProcessorInterface
      *
      * @return mixed
      */
-    public function getEnv(string $prefix, string $name, Closure $getEnv)
+    public function getEnv(string $prefix, string $name, Closure $getEnv): mixed
     {
         if ($this->ignore === true) {
             return $getEnv($name);
